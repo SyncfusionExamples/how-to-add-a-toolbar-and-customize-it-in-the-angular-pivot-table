@@ -1,0 +1,9 @@
+<ejs-pivotview #pivotview [dataSourceSettings]="dataSourceSettings" height="500px" width="1000px"
+ showGroupingBar="true" showToolbar='true' [toolbar]='toolbarOptions'
+ (saveReport)='saveReport($event)' (newReport)='newReport()' (loadReport)='loadReport($event)'
+ (fetchReport)='fetchReport($event)' (renameReport)="renameReport($event)" 
+ (removeReport)="removeReport($event)" [displayOption]="displayOption" [chartTypes]="chartTypeOptions"
+ allowPdfExport="true" allowExcelExport="true" allowNumberFormatting="true" 
+ allowConditionalFormatting="true" showFieldList="true" 
+ (toolbarRender)="beforeToolbarRender($event)"
+></ejs-pivotview> 
